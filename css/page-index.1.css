@@ -1,0 +1,212 @@
+body{
+	background: url(../img/bd-bg.png) repeat-x;
+}
+.clearfix:before,
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.w{
+	width: 940px;
+	margin: 0 auto;
+}
+.header{
+	padding-top: 37px;
+	padding-bottom: 46px;
+}
+.logo{
+	margin-left: 15px;
+}
+.nav{
+	float: right;
+	margin-top: 22px;
+}
+.nav li{
+	float: left;
+	padding: 0 10px 8px;
+	border-left: 1px #d6d6d6 dotted;
+}
+.nav a{
+	color: #666;
+	font: bold 14px Georgia, 'Times New Roman', Times, serif;
+	text-decoration: none;
+}
+.nav a:hover{
+	color: #a1a1a1;
+	text-decoration: underline;
+}
+.nav p{
+	color: #b7b7b7;
+	font: 11px tahoma;
+}
+.banner{
+	height: 356px;
+	background: url(../img/banner-bg.png) no-repeat bottom center;
+	position: relative;
+}
+.pointerDiv{
+	position: absolute;
+	top: 314px;
+	left: 15px;
+}
+.pointerDiv a{
+	float: left;
+	width: 17px;
+	height: 17px;
+	background: url(../img/pointer.png) no-repeat;
+	margin-left: 4px;
+}
+.pointerDiv .active,
+.pointerDiv a:hover
+{
+	background: url(../img/pointer-active.png) no-repeat;
+}
+/* 下面设置content部分 */
+.content h1{
+	text-align: center;
+	font: bold 24px Georgia, 'Times New Roman', Times, serif;
+	padding: 6px 0 20px;
+	background: url(../img/line.png) no-repeat bottom center;
+	margin-bottom:38px;
+}
+.content .box1,.content .box2,.content .box3,
+.contact .sc, .contact .co, .contact .nu{
+	float: left;
+	width: 300px;
+}
+.content .box2,
+.contact .co{
+	margin: 0 20px;
+}
+.content h2{
+	color: #11719e;
+	font: 21px Georgia, 'Times New Roman', Times, serif;
+}
+.content .p1{
+	color: #8c8c8c;
+	font: 12px helvetica;
+}
+.content .imgDiv{
+	width: 299px;
+	height: 190px;
+	background: url(../img/img-bg.png) no-repeat;
+	margin: 16px 0px 10px 0;
+	text-align: center;
+	padding-top: 12px;
+}
+.content .p2{
+	height: 92px;
+	color: #3e3e3e;
+	font: 13px helvetica;
+	word-spacing: 2px;/* 字间距 */
+}
+.content .lm{
+	width: 163px;
+	height: 40px;
+	display: block;
+	background: url(../img/btn1.png) no-repeat;
+	text-decoration: none;
+	color: #016999;
+	font: 12px/40px helvetica;
+	text-indent: 1em;/* 文字缩进 */
+	margin-bottom: 35px;
+}
+/* 第四部分 */
+.contact{
+	background: url(../img/line.png) no-repeat top center;
+}
+.contact .txt{
+	width: 276px;
+	height: 33px;
+	background: url(../img/input.png) no-repeat;
+	border: none;
+	padding: 0 10px;/* 文字输入缩进 */
+	margin-bottom: 16px;
+}
+.contact .tarea{
+	width: 276px;
+	height: 114px;
+	background: url(../img/textarea.png) no-repeat;
+	border: none;
+	overflow: auto;
+	resize: none;/* 文本大小不能调整 */
+	margin: 0;
+	padding:10px;/* 文字输入缩进 */
+}
+.contact .btn{
+	width: 163px;
+	height: 32px;
+	background: url(../img/btn2.png) no-repeat;
+	border: none;
+	margin: 11px 0 23px 0;
+	padding: 0;
+	color: white;
+	font: 13px Georgia, 'Times New Roman', Times, serif;
+	text-align: left;
+	text-indent: 1em;
+	cursor:pointer;
+}
+.contact h2{
+	color: #444;
+	font: 18px/1 georgia;
+	border-bottom:#d3d3d3 1px dashed;
+	padding: 44px 0 10px 0;
+	margin-bottom:15px ;
+}
+.sc .p1{
+	color: #444;
+	font: 12px/1 helvetica;
+}
+.sc .icon{
+	/* font-size: 0; *//* 去除空格 */
+	margin-top: 4px;
+}
+.sc .nl{
+	font: bold 18px/1 "gill sans mt condensed";
+	padding: 33px 0px 10px 0px;
+}
+.sc .txt{
+	margin: 15px 0 0 0;
+}
+.nu img{
+	float: left;
+	margin-right: 8px;
+}
+.nu p{
+	height: 58px;
+	color: #444;
+	font: 12px/1 helvetica;
+	border-bottom: 1px dashed #D3D3D3;
+	margin-bottom: 14px;
+	padding-bottom: 9px;
+}
+.nu .no-margin{
+	margin-bottom: 0px;
+}
+/* 第五部分 */
+.footer{
+	height: 173px;
+	background: #333;
+	border-top: #4c4c4c 10px solid;
+}
+.footer a,.footer p{
+	color: #999;
+	font : 11px helvetica;
+	text-decoration: none;
+}
+.footer a:hover{
+	color: #cccaca;
+	text-decoration: underline;
+}
+.footer .copy{
+	float: right;
+}
+.footer .w{
+	padding-top: 18px;
+}
+.footer p{
+	margin-left: 8px;
+	margin-right: 23px;
+	margin-bottom: 6px;
+}
