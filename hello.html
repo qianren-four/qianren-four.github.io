@@ -4,12 +4,69 @@
 		<meta charset="utf-8">
 		<title></title>
 		<style type="text/css">
-			h1{
-				color: blue;
+			body{
+				perspective: 1000px;
+			}
+			.box1{
+				width: 200px;
+				height: 200px;
+				margin: 200px auto;
+				position: relative;
+				transform-style: preserve-3d;
+				transform: rotate3d(1,1,1,0deg);
+				transition: all 5s;
+			}
+			.box1:hover{
+				transform: rotate3d(1,1,1,720deg);
+			}
+			.page{
+				width: 200px;
+				height: 200px;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				opacity: 0.5;
+			}
+			.front{
+				background-image: url(picture/1.jpg);
+				background-size: 100% auto;
+				transform: translateZ(100px);
+			}
+			.back{
+				background-image: url(picture/2.jpg);
+				background-size: 100% auto;
+				transform: translateZ(-100px);
+			}
+			.lift{
+				background-image: url(picture/3.jpg);
+				background-size: 100% auto;
+				transform: rotateY(-90deg) translateZ(100px);
+			}
+			.right{
+				background-image: url(picture/4.jpg);
+				background-size: 100% auto;
+				transform: rotateY(90deg) translateZ(100px);
+			}
+			.top{
+				background-image: url(picture/5.jpg);
+				background-size: 100% auto ;
+				transform: rotatex(-90deg) translateZ(100px);
+			}
+			.bottom{
+				background-image: url(picture/6.jpg);
+				background-size: 100% auto;
+				transform: rotatex(90deg) translateZ(100px);
 			}
 		</style>
 	</head>
 	<body>
-		<h1>本网站正在开发维护中！！！请各位网友谅解</h1>
+		<div class="box1">
+			<div class="page front"></div>
+			<div class="page back"></div>
+			<div class="page top"></div>
+			<div class="page bottom"></div>
+			<div class="page lift"></div>
+			<div class="page right"></div>
+		</div>
 	</body>
 </html>
