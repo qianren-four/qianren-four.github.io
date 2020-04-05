@@ -7,6 +7,16 @@
 			body{
 				perspective: 1000px;
 			}
+			h1{
+				text-align: center;
+				color: white;
+				font-size: 50px;
+				animation:donghua 2s infinite alternate;/* infinite 无线循环*/
+			}
+			@keyframes donghua{
+				from{text-shadow: 0px 0px 20px green,0px 0px 20px green,0px 0px 20px green;}
+				to{text-shadow:  0px 0px 0px green,1px 1px 0px green,2px 2px 0px green,3px 3px 0px green,4px 4px 0px green,5px 5px 0px green;}
+			}
 			.box1{
 				width: 200px;
 				height: 200px;
@@ -28,39 +38,39 @@
 				opacity: 0.5;
 			}
 			.front{
-				background-image: url(img/threeD/1.jpg);
+				background-image: url(img/threeD/09.jpg);
 				background-size: 100% auto;
 				transform: translateZ(100px);
 			}
 			.back{
-				background-image: url(img/threeD/2.jpg);
+				background-image: url(img/threeD/07.jpg);
 				background-size: 100% auto;
 				transform: translateZ(-100px);
 			}
 			.lift{
-				background-image: url(img/threeD/3.jpg);
+				background-image: url(img/threeD/08.jpg);
 				background-size: 100% auto;
 				transform: rotateY(-90deg) translateZ(100px);
 			}
 			.right{
-				background-image: url(img/threeD/4.jpg);
+				background-image: url(img/threeD/10.jpg);
 				background-size: 100% auto;
 				transform: rotateY(90deg) translateZ(100px);
 			}
 			.top{
-				background-image: url(img/threeD/5.jpg);
+				background-image: url(img/threeD/02.jpg);
 				background-size: 100% auto ;
 				transform: rotatex(-90deg) translateZ(100px);
 			}
 			.bottom{
-				background-image: url(img/threeD/6.jpg);
+				background-image: url(img/threeD/03.jpg);
 				background-size: 100% auto;
 				transform: rotatex(90deg) translateZ(100px);
 			}
 		</style>
 	</head>
 	<body>
-		<h1>Hello word</h1>
+		<h1>欢迎来到个人3D相册</h1>
 		<div class="box1">
 			<div class="page front"></div>
 			<div class="page back"></div>
