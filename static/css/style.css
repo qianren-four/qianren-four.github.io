@@ -42,7 +42,7 @@ div#foreground{
 .wrap{
 	height: 200px;
 	width: 200px;
-	margin: 100px auto;
+	margin: 250px auto;
 	position: relative;
 	perspective:2000px;
 	/*实现3d效果*/
